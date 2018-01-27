@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
 
 * {
-    margin:0;
+    margin:10px;
 }
 
 body {
-    background-color: #FFFFFF;
+    color:#FAF5E4;
     font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 16px;    
+    font-size: 1em;    
 }
 
 /* Grid Start */
 
 .wrapper {
-    background: #fdfdfd;
+    background-color:#429EC2;
     display:grid;
     grid-template: "header header nav nav"
                    "main main main main"
@@ -22,29 +22,32 @@ body {
     grid-template-rows: 100px 
                         1fr
                         30px;
-    min-height: 100vh;
+    min-height: 95vh;
     grid-gap: 5px;
 }
 
 .header { 
     grid-area: header; 
-    background-color: #FF0000;
     text-align: center;
     justify-content: center;
     align-self: center;
 }
 
+.header img {
+    border-radius: 20px;
+}
+
 .nav { 
     grid-area: nav; 
-    background-color:green;
     align-self: center;
 
 }
 
 .menu li {
+    background-color: #354b5a;
     list-style: none;
     display: inline-block;
-    border: solid 3px #000;
+    border: solid 3px #354B5A;
     border-radius: 5px;
     margin: 0.2rem;
     padding: 0.3rem;
@@ -53,17 +56,19 @@ body {
 
 .main { 
     grid-area: main; 
-    background-color: blue;
     text-align: center;
     align-self: center;
     justify-self: center;
 }
 
 .footer { 
-    grid-area: footer; 
-    background-color: #757555;
-    text-align: center;
+    background-color:#354b5a;
+    border-radius: 15px;
+    font-size:2em;
     align-self: center;
+    grid-area: footer;
+    text-align: center;
+    
 }
 
 /* Main Page */
@@ -76,9 +81,9 @@ body {
 }
 
 
-@media screen and (max-width: 919px) {
+@media screen and (max-width: 950px) {
     * {
-        margin: 0;
+        margin: 5px;
         padding: 0;
     }
     
